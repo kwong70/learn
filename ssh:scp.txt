@@ -1,0 +1,12 @@
+#connecting to server 
+ssh handle@domain 
+ssh kwong@lts.ensb.us
+
+#Copy 1 file locally to server. Dont forget to put colon 
+scp filePath handle@domain:remoteFilePath
+ex. 
+scp ./ kwong@lts.ensb.us:/datastore2
+
+#copying multiple files locally to remote
+scp -r filePath handle@domain:remoteFilePath
+
