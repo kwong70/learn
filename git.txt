@@ -1,0 +1,30 @@
+How to initialize and connect a local repo to a remote:
+
+git remote add origin remoteRepoURl
+git push -u origin master
+
+git status # Gives you the status of your files and tells us what version of the file we're working with
+
+# adds <file> to staging area 
+git add <file> 
+
+# commits changes with comment 
+git commit -m 'any comment' 
+
+# combines add and commit in one line
+git -a -m 'any comment' 
+
+#Pushes local repo changes to remote repo
+git push 
+
+#Change to and create new branch
+git checkout -b <branchName>
+
+#Getting remote branches
+git fetch
+
+#Merge current branch with specified branch
+git merge <branchYouWantToMerge>
+
+#Delete Branch
+git branch -d <branchToBeDeleted>
