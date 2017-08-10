@@ -1,0 +1,20 @@
+#to access crontab, from command line
+nano crontab 
+
+#once in crontab, crontab format 
+
+m h dom mon dow year command
+
+m = minutes (0-59)
+h = hour (0-23)
+dom = day of the month(1-31)
+mon = month (1-12)
+dow = day of the week (1-7) 1 = monday
+y = year 
+
+* = every, meaning if you put this instead of a number, for example if you put it in place for hour it means every hour. 
+
+* * * * * * python filePath       	Each minute runs a python script in filePath
+59 23 31 12 5 *                     One minute  before the end of year if the last day of the year is Friday
+								
+59 23 31 DEC Fri *                  Same as above (different notation)
